@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		11CFD7ED30628EE900287BA3 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 11CFD7EC30628EE900287BA3 /* RxSwift */; };
+		11CFD7EF30628EF000287BA3 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 11CFD7EE30628EF000287BA3 /* RxRelay */; };
+		11CFD7F130628EF600287BA3 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 11CFD7F030628EF600287BA3 /* RxCocoa */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		11483FFD305FDAA8003D49A1 /* TicketFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicketFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +42,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11CFD7F130628EF600287BA3 /* RxCocoa in Frameworks */,
+				11CFD7EF30628EF000287BA3 /* RxRelay in Frameworks */,
+				11CFD7ED30628EE900287BA3 /* RxSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				11483FFF305FDAA8003D49A1 /* TicketFlow */,
+				11CFD7EB30628EE900287BA3 /* Frameworks */,
 				11483FFE305FDAA8003D49A1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +66,13 @@
 				11483FFD305FDAA8003D49A1 /* TicketFlow.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		11CFD7EB30628EE900287BA3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,6 +95,9 @@
 			);
 			name = TicketFlow;
 			packageProductDependencies = (
+				11CFD7EC30628EE900287BA3 /* RxSwift */,
+				11CFD7EE30628EF000287BA3 /* RxRelay */,
+				11CFD7F030628EF600287BA3 /* RxCocoa */,
 			);
 			productName = TicketFlow;
 			productReference = 11483FFD305FDAA8003D49A1 /* TicketFlow.app */;
@@ -107,6 +127,9 @@
 			);
 			mainGroup = 11483FF4305FDAA8003D49A1;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				11CFD7EA30628EBD00287BA3 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 11483FFE305FDAA8003D49A1 /* Products */;
 			projectDirPath = "";
@@ -149,7 +172,6 @@
 				INFOPLIST_FILE = TicketFlow/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -180,7 +202,6 @@
 				INFOPLIST_FILE = TicketFlow/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -341,6 +362,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		11CFD7EA30628EBD00287BA3 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.10.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		11CFD7EC30628EE900287BA3 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11CFD7EA30628EBD00287BA3 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		11CFD7EE30628EF000287BA3 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11CFD7EA30628EBD00287BA3 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		11CFD7F030628EF600287BA3 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11CFD7EA30628EBD00287BA3 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 11483FF5305FDAA8003D49A1 /* Project object */;
 }

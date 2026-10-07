@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24765" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24743"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PriorityCollectionViewCell" customModule="TicketFlow" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="92" height="30"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="92" height="30"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4hz-95-TbA" customClass="StyledView" customModule="TicketFlow" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="92" height="30"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="b7p-8q-Ntp">
+                                <rect key="frame" x="0.0" y="7" width="92" height="16"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="b7p-8q-Ntp" firstAttribute="leading" secondItem="4hz-95-TbA" secondAttribute="leading" id="0Pi-n4-x9M"/>
+                            <constraint firstAttribute="bottom" secondItem="b7p-8q-Ntp" secondAttribute="bottom" constant="7" id="0XZ-HA-J0c"/>
+                            <constraint firstAttribute="trailing" secondItem="b7p-8q-Ntp" secondAttribute="trailing" id="eYY-yb-VdH"/>
+                            <constraint firstItem="b7p-8q-Ntp" firstAttribute="top" secondItem="4hz-95-TbA" secondAttribute="top" constant="7" id="hNL-dG-faO"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="4hz-95-TbA" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="CwB-wv-NC9"/>
+                <constraint firstAttribute="trailing" secondItem="4hz-95-TbA" secondAttribute="trailing" id="J8B-xy-n1T"/>
+                <constraint firstAttribute="bottom" secondItem="4hz-95-TbA" secondAttribute="bottom" id="Ltw-nX-NcY"/>
+                <constraint firstItem="4hz-95-TbA" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ojO-Sa-Kzl"/>
+            </constraints>
+            <size key="customSize" width="92" height="30"/>
+            <connections>
+                <outlet property="backgroundCardView" destination="4hz-95-TbA" id="56x-NH-QaP"/>
+                <outlet property="titleLabel" destination="b7p-8q-Ntp" id="jKk-6v-DSf"/>
+            </connections>
+            <point key="canvasLocation" x="170.99236641221373" y="146.47887323943664"/>
+        </collectionViewCell>
+    </objects>
+</document>
